@@ -1,0 +1,123 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: "微軟正黑體";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  width: 70%;
+}
+
+body {
+  background-color: #F6F4F0;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* 頁首開始 */
+header {
+  background-color: #E3DDCC;
+}
+
+header img {
+  display: block;
+  position: relative;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
+}
+
+header nav > ul {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+header nav > ul > li > a {
+  color: #716246;
+  letter-spacing: 1.5px;
+}
+
+/* 頁首結束 */
+/* banner開始 */
+.banner-fluid {
+  width: 100%;
+}
+
+.banner-title {
+  position: relative;
+  top: -650px;
+  left: 80px;
+}
+
+body > div > div {
+  position: relative;
+  top: -645px;
+  left: 80px;
+}
+
+body > div > div > p {
+  font-size: 15px;
+  color: #716246;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+}
+
+/* banner結束 */
+body h1 {
+  margin-left: auto;
+  margin-right: auto;
+  color: #D47A66;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+body h5 {
+  color: #D47A66;
+  font-size: 18px;
+}
+
+.intro-box {
+  display: flex;
+}
+
+.intro-left {
+  width: 30%;
+}
+
+.intro-right {
+  width: 70%;
+}
+
+.intro-img {
+  border-radius: 100%;
+  width: 350px;
+  height: 350px;
+}
+
+body h3 {
+  text-align: center;
+  line-height: 3em;
+  margin: 0;
+}
