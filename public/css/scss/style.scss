@@ -100,9 +100,10 @@ body h5{
     font-size: 18px;
 }
 
-.intro-box{
+.intro-content{
     display: flex;
-    // justify-content: space-between;
+    padding-bottom: 70px;
+    justify-content: space-between;
 }
 
 .intro-left{
@@ -115,15 +116,18 @@ body h5{
 
 .intro-img{
     border-radius: 100%;
-    width: 350px;
-    height: 350px;
 }
 
 body h3{
     text-align: center;
     line-height: 3em;
     // background-color: white;
-    margin:0;
 }
 
+.news-bg{
+    background-color: rgb(255, 255, 255,.7);
+    border-radius: 10px;
+    height: 300px;
+    padding: 30px;
+}
 //內容結束
