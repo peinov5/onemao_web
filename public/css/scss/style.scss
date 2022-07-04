@@ -1,4 +1,5 @@
-$primary-color: #716246 ;
+$primary-color-brown: #716246 ;
+$primary-color-red:#D47A66;
 
 *{
     margin: 0;
@@ -9,8 +10,54 @@ h1,h2,h3,h4,h5,h6,p,a{
     font-family: "微軟正黑體";
 }
 
+
 a{
     text-decoration: none;
+}
+h1{
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    color: $primary-color-red;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 22px;
+    color: $primary-color-brown;
+    font-weight: 550;
+    letter-spacing: .75px;
+}
+
+h3{
+    color: $primary-color-brown;
+    font-weight: 300;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: white;
+    line-height: 1.3em;
+}
+
+h4{
+    font-size: 16px;
+    color: $primary-color-brown;
+    font-weight: 300;
+    line-height: 1.5em;;
+}
+
+h5{
+    color: $primary-color-red;
+    font-size: 15px;
+    letter-spacing: .75px;
+}
+
+h6{
+    font-size: 13px;
+    color: #a79066;
+    letter-spacing: .75px;
+    font-weight: 200;
 }
 
 ul{
@@ -35,14 +82,15 @@ body{
 /* 頁首開始 */
 header{
     background-color: #E3DDCC;
+    position: relative;
 }
 
 header img{
     display: block;
     position: relative;
     margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     width: 100px;
 }
 
@@ -53,82 +101,291 @@ header nav>ul{
     padding-bottom: 10px;
 }
 
+header nav>ul>li{
+    position: relative;
+}
+
 header nav>ul>li>a{
     color: #716246;
     letter-spacing: 1.5px;
 }
+
+header .submenu{
+    position: absolute;
+    z-index: 99;
+    top: 26px;
+    display: none;
+    text-align: center;
+}
+
+.submenu>li{
+    line-height: 45px;
+    width: 150%;
+    background-color: white;
+
+}
+
+.submenu>li>a{
+    color:$primary-color-brown;
+    text-align: center;
+}
+
+header nav>ul>li:hover .submenu{
+    display: block;
+}
+
+.submenu>li:hover{
+    color:$primary-color-red;
+    background-color: rgb(255, 242, 242);
+}
+
+
+// .member-nav-icon{
+//     display: inline-block;
+//     width: 60%;
+//     position: absolute;
+//     right: 10px;
+//     top: 10px;
+// }
+
 /* 頁首結束 */
 
 /* banner開始 */
 .banner-fluid{
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .banner-title{
-    position: relative;
-    top: -650px;
+    display: block;
+    position: absolute;
+    width: 25%;
+    top: 180px;
     left: 80px;
 }
 
-body>div>div{
-    position: relative;
-    top:-645px;
+.banner-text{
+    display: block;
+    position: absolute;
+    top:240px;
     left: 80px;
-}
-
-body>div>div>p{
-    font-size: 15px;
-    color: $primary-color;
+    font-size: 18px;
+    color: $primary-color-brown;
     line-height: 1.5em;
     letter-spacing: 1px;
-    display: block;
     margin: 0;
 }
 /* banner結束 */
 
 //內容開始
-body h1{
-    margin-left: auto;
-    margin-right: auto;
-    color: #D47A66;
-    font-size: 28px;
-    letter-spacing: 1px;
-}
-
-body h5{
-    color: #D47A66;
-    font-size: 18px;
-}
 
 .intro-content{
     display: flex;
-    margin: 20px 0;
-    padding-bottom: 70px;
+    margin:30px auto;
+    justify-content: space-between;
 }
 
-.intro-left{
-    width: 30%;
-}
+// .intro-left{
+//     width: 30%;
+// }
 
 .intro-right{
+    text-align: center;
     display: block;
     width: 70%;
+    margin: auto;
 }
 
 .intro-img{
     border-radius: 100%;
+    width: 90%;
 }
 
-body h3{
-    text-align: center;
-    line-height: 3em;
-    // background-color: white;
-}
+
 
 .news-bg{
     background-color: rgb(255, 255, 255,.7);
     border-radius: 10px;
-    height: 300px;
+    height: 350px;
     padding: 30px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
+
+.news-content{
+    margin: 0 auto;
+    width:95%;
+}
+
+.news-title{
+    color: $primary-color-brown;
+    line-height: 3em;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+hr{
+    background-color: #E3B2A8;
+    border: none;
+    height: 1px;
+}
+
+.btn-more-news{
+    text-align: center;
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    background-color: $primary-color-red;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace,"微軟正黑體";
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-more-news:hover{
+    background-color:#c86049;
+    cursor: pointer;
+}
+
+//本月熱銷
+.best-seller-content{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.best-seller-left{
+    width: 30%;
+}
+
+.best-seller-right{
+    position: relative;
+    width: 70%;
+    padding-left:10px;
+}
+
+.best-seller-img{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.best-seller-price{
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-check-product{
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    background-color: $primary-color-red;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace,"微軟正黑體";
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-check-product:hover{
+    background-color:#c86049;
+    cursor: pointer;
+}
+
+//毛毛月刊
+.magazine-title{
+    margin-top: 100px;
+}
+.magazine-content{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.col-6{
+    width: calc(100% / 2 - 30px);
+    margin: 0px 15px 25px 15px;
+}
+
+.magazine-img{
+    width: 100%
+}
+
+.btn-more-magazine{
+    text-align: center;
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    background-color: $primary-color-red;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace,"微軟正黑體";
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.btn-more-magazine:hover{
+    background-color:#c86049;
+    cursor: pointer;
+}
+
 //內容結束
+
+//footer開始
+footer{
+    background-color: #E3DDCC;
+    height: 190px;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer ul>li{
+    margin: auto;
+    justify-content: space-between;
+    display: block;
+    margin-top: 40px;
+}
+
+footer ul>li>a{
+    color: $primary-color-brown;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+}
+
+.footer-icon{
+    width: 85%;
+}
+
+footer>div>p{
+    font-weight: 400;
+    font-size:15px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-top: 20px;
+    color: $primary-color-brown;
+    margin-bottom: 0;
+}
+
+.copyright{
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 0.75px;
+    margin-top:20px;
+}

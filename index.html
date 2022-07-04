@@ -16,8 +16,20 @@
         <ul>
           <li><a href="#">關於我們</a></li>
           <li><a href="#">最新消息</a></li>
-          <li><a href="#">狗狗專區</a></li>
-          <li><a href="#">貓貓專區</a></li>
+          <li><a href="#">狗狗專區</a>
+            <ul class="submenu">
+              <li><a href="#">即食鮮食包</a></li>
+              <li><a href="#">健康飼料餅</a></li>
+              <li><a href="#">營養小點心</a></li>
+            </ul>
+          </li>
+          <li><a href="#">貓貓專區</a>
+            <ul class="submenu">
+              <li><a href="#">即食鮮食包</a></li>
+              <li><a href="#">健康飼料餅</a></li>
+              <li><a href="#">營養小點心</a></li>
+            </ul>
+          </li>
           <li><a href="#">毛毛月刊</a></li>
           <li><a href="#">常見問答</a></li>
         </ul>
@@ -25,10 +37,10 @@
     </div>
   </header>
   <!-- banner開始-->
-  <div><img class="banner-fluid" src="public/images/index-banner.jpg" alt=""><img class="banner-title"
-      src="public/images/just-for-pets.png" alt="">
+  <div><img class="banner-fluid" src="public/images/index-banner.jpg" alt="">
+    <img class="banner-title" src="public/images/just-for-pets.png" alt="">
     <div>
-      <p>從日常飲食與心理需求照顧起<br>滿足毛孩最單純的幸福</p>
+      <p class="banner-text">從日常飲食與心理需求照顧起<br>滿足毛孩最單純的幸福</p>
     </div>
   </div>
   <!-- banner結束-->
@@ -40,12 +52,13 @@
       <h1 class="text-center">毛孩的專屬食堂</h1>
       <div class="container intro-content">
         <div class="intro-left">
-          <img class="intro-img" src="public/images/intro-dog.jpg" alt=""></div>
+          <img class="intro-img" src="public/images/intro-dog.jpg" alt="">
+        </div>
         <div class="intro-right">
-          <h3>期望以真誠相待的精神<br>
-            陪伴每一位飼主與可愛毛孩<br>
-            提升我們與毛孩的生活品質<br>
-            享受簡單的日常小幸福</h3>
+          <h3>期望以真誠相待的精神</h3><br>
+          <h3>陪伴每一位飼主與可愛毛孩</h3><br>
+          <h3>提升我們與毛孩的生活品質</h3><br>
+          <h3>享受簡單的日常小幸福</h3>
         </div>
       </div>
     </div>
@@ -54,12 +67,87 @@
     <div class="news-bg">
       <h5 class="text-center">News</h5>
       <h1 class="text-center">最新消息</h1>
-
-
+      <div class="news-content">
+        <br>
+        <hr>
+        <ul>
+          <li><a class="news-title" href="">✦ 2022.06.11&nbsp;[ 抽獎活動 ] 回饋募集中！點數大放送，再抽寵物推車</a></li>
+          <hr>
+          <li><a class="news-title" href="">✦ 2022.06.01&nbsp;[ 連假公告 ] 端午假期將暫停出貨與客服</a></li>
+          <hr>
+          <li><a class="news-title" href="">✦ 2022.05.23&nbsp;[ 新品上架 ] 健康更加分！有機系列鮮食包正式上架</a></li>
+          <hr>
+          <li><a class="news-title" href="">✦ 2022.04.18&nbsp;[ 快閃優惠 ] 限時五天！全品項8折再享超取免運</a></li>
+          <hr>
+        </ul>
+      </div>
+      <div class="btn-more-news">更多最新消息</div>
     </div>
     <!-- 最新消息結束 -->
+
+    <!-- 本月熱銷開始 -->
+    <h5 class="text-center">Best seller</h5>
+    <h1 class="text-center">本月熱銷</h1>
+    <div class="best-seller-content">
+      <div class="best-seller-left"><img class="best-seller-img" src="public/images/product.png" alt=""></div>
+      <div class="best-seller-right">
+        <h6>For dogs</h6>
+        <h2>美味烤雞鮮食包</h2>
+        <h4>選用高品質國產雞肉，獨家低溫烘烤技術，少油少鹽，美味不減、健康加倍！
+          特別添加蔬菜丁，讓毛孩不只吃得開心，同時補充全方位營養！</h4>
+        <h2 class="best-seller-price">NT.180</h2>
+        <div class="btn-check-product">查看商品</div>
+      </div>
+    </div>
+    <div class="best-seller-content">
+      <div class="best-seller-left"><img class="best-seller-img" src="public/images/product.png" alt=""></div>
+      <div class="best-seller-right">
+        <h6>For dogs</h6>
+        <h2>鮮蔬魚肉鮮食包</h2>
+        <h4>新鮮的鯛魚肉，是貓咪的最愛。天然魚油有助於毛孩的毛髮保健，
+          全新升級添加有機胡蘿蔔丁及小黃瓜丁，補充纖維，健康又補水！
+          </h4>
+        <h2 class="best-seller-price">NT.180</h2>
+        <div class="btn-check-product">查看商品</div>
+      </div>
+    </div>
+    </div>
+    <!-- 本月熱銷結束 -->
+
+    <!-- 毛毛月刊開始 -->
+    <h5 class="text-center magazine-title">MAO's magazine</h5>
+    <h1 class="text-center">毛毛月刊</h1>
+    <div class="magazine-content">
+      <div class="col-6">
+        <a href=""><img class="magazine-img" src="public/images/magazine-june.png" alt=""></img></a>
+      </div>
+      <div class="col-6">
+        <a href=""><img class="magazine-img" src="public/images/magazine-may.png" alt=""></img></a>
+      </div>
+    </div>
+    <div class="btn-more-magazine">更多毛毛月刊</div>
+    <!-- 毛毛月刊結束 -->
   </main>
   <!-- 內容end-->
+
+  <!-- footer start-->
+  <footer>
+    <div class="container footer-chosen">
+      <ul>  
+        <li><a href="">購物流程</a></li>
+        <li><a href="">售後服務</a></li>
+        <li><a href="">實體通路</a></li>
+        <li><a href="">異業合作</a></li>
+        <li><a href="">隱私條款</a></li>
+        <li><a href="https://www.facebook.com"><img class="footer-icon" src="public/images/icon-fb.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com"><img class="footer-icon" src="public/images/icon-ins.png" alt=""></a></li>
+        <li><a href="https://line.me/zh-hant/"><img class="footer-icon" src="public/images/icon-line.png" alt=""></a></li>
+      </ul>
+      <p>service@onemao.com.tw    MON-FRI 09:00-12:00 / 13:00-18:00</p>
+      <p class="copyright">2022 ONE MAO PET CANTEEN © ALL Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- footer end -->
 </body>
 
 </html>
