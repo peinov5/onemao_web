@@ -110,20 +110,20 @@ header nav > ul > li > a {
 
 header .submenu {
   position: absolute;
-  z-index: 99;
-  top: 26px;
+  top: 22px;
   display: none;
   text-align: center;
 }
 
 .submenu > li {
   line-height: 45px;
-  width: 150%;
+  width: 160%;
   background-color: white;
+  text-align: center;
 }
 
 .submenu > li > a {
-  color: #716246;
+  color: #938781;
   text-align: center;
   display: block;
   transition: all 0.5s ease;
@@ -135,7 +135,7 @@ header nav > ul > li:hover .submenu {
 
 .submenu > li:hover {
   color: #D47A66;
-  background-color: #fff2f2;
+  background-color: #f5f4f2;
 }
 
 /* 頁首結束 */
@@ -459,54 +459,101 @@ footer > div > p {
   font-weight: 300;
 }
 
-/* 描述下拉選單容器 */
-.dropdown {
-  position: relative;
-  width: 120px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /*換行*/
 }
 
-/* 描述下拉選單按鈕 */
-.dropdown-btn {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  background: tomato;
-  line-height: 40px;
-  height: 40px;
+.col-1 {
+  --num: calc(12 / 1);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-2 {
+  --num: calc(12 / 2);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-3 {
+  --num: calc(12 / 3);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-4 {
+  --num: calc(12 / 4);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-5 {
+  --num: calc(12 / 5);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-6 {
+  --num: calc(12 / 6);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-7 {
+  --num: calc(12 / 7);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-8 {
+  --num: calc(12 / 8);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-9 {
+  --num: calc(12 / 9);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-10 {
+  --num: calc(12 / 10);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-11 {
+  --num: calc(12 / 11);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-12 {
+  --num: calc(12 / 12);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.img-fluid {
   width: 100%;
-  text-align: center;
 }
 
-/* 描述下拉選單 */
-.dropdown > .menu {
-  position: absolute;
-  left: 0;
-  top: 40px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  /* 預設menu為隱藏 */
-  display: none;
+.img-rounded {
+  border-radius: 6px;
 }
 
-/* 描述hover後的下拉選單 */
-.dropdown:hover > .menu {
-  display: block;
+.title a {
+  color: #716246;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-size: 18px;
 }
 
-/* 描述下拉選單裡的按鈕 */
-.dropdown > .menu a {
-  text-decoration: none;
-  background: white;
-  color: gray;
-  display: block;
-  padding: 5px 0;
-  text-align: center;
-  transition: all 0.5s ease;
-}
-
-.dropdown > .menu a:hover {
-  background: #eee;
+.date {
+  color: #938781;
+  font-size: 12px;
+  letter-spacing: 0.5px;
 }

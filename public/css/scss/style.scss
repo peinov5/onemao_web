@@ -112,21 +112,20 @@ header nav>ul>li>a{
 
 header .submenu{
     position: absolute;
-    z-index: 99;
-    top: 26px;
+    top: 22px;
     display: none;
     text-align: center;
 }
 
 .submenu>li{
     line-height: 45px;
-    width: 150%;
+    width: 160%;
     background-color: white;
-
+    text-align: center;
 }
 
 .submenu>li>a{
-    color:$primary-color-brown;
+    color:rgb(147, 135, 129);
     text-align: center;
     display: block;
     transition: all .5s ease;
@@ -134,11 +133,12 @@ header .submenu{
 
 header nav>ul>li:hover .submenu{
     display: block;
+
 }
 
 .submenu>li:hover{
     color:$primary-color-red;
-    background-color: rgb(255, 242, 242);
+    background-color: rgb(245, 244, 242);
 }
 
 
@@ -485,56 +485,41 @@ footer>div>p{
     font-weight: 300;
 }
 
-///////////
-/// 
-/* 描述下拉選單容器 */
-.dropdown {
-    position: relative;
-    width: 120px;
-  }
-  
-  /* 描述下拉選單按鈕 */
-  .dropdown-btn {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background: tomato;
-    line-height: 40px;
-    height: 40px;
+
+
+///////////最新消息//////////
+
+
+
+.row{
+display: flex;
+flex-wrap: wrap; /*換行*/
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        --num: calc(12 / #{$i});
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+    }
+}
+
+.img-fluid{
     width: 100%;
-    text-align: center;
-  }
-  
-  /* 描述下拉選單 */
-  .dropdown>.menu {
-    position: absolute;
-    left: 0;
-    top: 40px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    /* 預設menu為隱藏 */
-    display: none;
-  }
-  
-  /* 描述hover後的下拉選單 */
-  .dropdown:hover>.menu {
-    display: block;
-  }
-  
-  /* 描述下拉選單裡的按鈕 */
-  .dropdown>.menu a {
-    text-decoration: none;
-    background: white;
-    color: gray;
-    display: block;
-    padding: 5px 0;
-    text-align: center;
-    transition: all .5s ease;
-  }
-  
-  .dropdown>.menu a:hover {
-    background: #eee;
-  }
+}
+
+.img-rounded{
+    border-radius: 6px;
+}
+
+.title a{
+    color: $primary-color-brown;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-size: 18px;
+}
+.date{
+    color:rgb(147, 135, 129);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
