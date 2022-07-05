@@ -125,6 +125,8 @@ header .submenu {
 .submenu > li > a {
   color: #716246;
   text-align: center;
+  display: block;
+  transition: all 0.5s ease;
 }
 
 header nav > ul > li:hover .submenu {
@@ -363,4 +365,148 @@ footer > div > p {
   font-weight: 200;
   letter-spacing: 0.75px;
   margin-top: 20px;
+}
+
+.about-us {
+  margin-top: 80px;
+}
+
+.about-us-logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.logo-red {
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us-text {
+  display: block;
+  color: #716246;
+  font-family: "微軟正黑體";
+  margin: 25px auto 60px auto;
+  text-align: center;
+  line-height: 1.75em;
+}
+
+.promise {
+  position: relative;
+}
+
+.promise1 {
+  display: block;
+}
+
+.promise1-img {
+  position: absolute;
+  right: 0;
+  width: 90%;
+}
+
+.promise2 {
+  display: block;
+  position: relative;
+}
+
+.promise2-img {
+  width: 80%;
+  position: absolute;
+  top: 660px;
+  left: 130px;
+}
+
+.promise-title-1 {
+  color: #D47A66;
+  position: absolute;
+  left: 190px;
+  top: 330px;
+  font-size: 26px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.promise-text-1 {
+  color: #716246;
+  position: absolute;
+  left: 190px;
+  top: 430px;
+  font-size: 17px;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.promise-title-2 {
+  color: #D47A66;
+  position: absolute;
+  right: 490px;
+  top: 880px;
+  font-size: 26px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.promise-text-2 {
+  color: #716246;
+  position: absolute;
+  left: 700px;
+  top: 988px;
+  font-size: 17px;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+/* 描述下拉選單容器 */
+.dropdown {
+  position: relative;
+  width: 120px;
+}
+
+/* 描述下拉選單按鈕 */
+.dropdown-btn {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background: tomato;
+  line-height: 40px;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+/* 描述下拉選單 */
+.dropdown > .menu {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  /* 預設menu為隱藏 */
+  display: none;
+}
+
+/* 描述hover後的下拉選單 */
+.dropdown:hover > .menu {
+  display: block;
+}
+
+/* 描述下拉選單裡的按鈕 */
+.dropdown > .menu a {
+  text-decoration: none;
+  background: white;
+  color: gray;
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.dropdown > .menu a:hover {
+  background: #eee;
 }
