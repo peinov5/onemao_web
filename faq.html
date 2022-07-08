@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="public/css/style.css">
+  <style>
+    h5 {
+      margin-top: 60px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+    footer{
+      margin-top: 60px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="container"><a href="index.html"><img src="public/images/onemao-logo-brown.png" alt=""></a><a
+        class="icon-menu" href="#">Tap!</a>
+      <nav>
+        <ul>
+          <li><a href="about-us.html">關於我們</a></li>
+          <li><a href="news.html">最新消息</a></li>
+          <li><a href="for-dogs.html">狗狗專區</a>
+            <ul class="submenu">
+              <li><a href="#">即食鮮食包</a></li>
+              <li><a href="#">營養小點心</a></li>
+            </ul>
+          </li>
+          <li><a href="for-cats.html">貓貓專區</a>
+            <ul class="submenu">
+              <li><a href="#">即食鮮食包</a></li>
+              <li><a href="#">營養小點心</a></li>
+            </ul>
+          </li>
+          <li><a href="magazine.html">毛毛月刊</a></li>
+          <li><a href="faq.html">常見問答</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h5 class="text-center">FAQ</h5>
+  <h1 class="text-center">常見問答</h1>
+
+
+  <div class="container">
+    <div class="qna">
+      <h3 class="question">Q1：鮮食包需要經過烹煮嗎？</h3>
+      <div class="answer">
+        <p>
+          鮮食包為開封即食的產品，無須另外烹煮。若是天氣冷想為毛孩加熱，可使用隔水加熱的方式，
+          嚴禁將鮮食包放入微波爐，以免發生危險。
+        </p>
+      </div>
+    </div>
+    <div class="qna">
+      <h3 class="question">Q2：付款方式與取貨方式有哪些？</h3>
+      <div class="answer">
+        <p>
+          我們提供銀行轉帳、超商代碼繳費、信用卡（VISA, MASTER CARD）三種付款方式，
+          取貨可選擇711店取或宅配。<br>
+        </p>
+      </div>
+    </div>
+    <div class="qna">
+      <h3 class="question">Q3：我家的毛孩適合這些食材嗎？</h3>
+      <div class="answer">
+        <p>
+          為了使大部分狗貓體質能夠接受，我們在食材搭配上會偏溫平，除非您家中的狗狗、貓咪有過熱或過寒的體質，或是對特定食材過敏，否則您可以經常替換配方的口味，避免長期餵食單一配方。
+        </p>
+      </div>
+    </div>
+    <div class="qna">
+      <h3 class="question">Q4：即食鮮食包需要經過烹煮嗎？</h3>
+      <div class="answer">
+        <p>
+          鮮食包為開封即食的產品，無須另外烹煮。若是天氣冷想為毛孩加熱，可使用隔水加熱的方式，
+          嚴禁將鮮食包放入微波爐，以免發生危險。
+        </p>
+      </div>
+    </div>
+    <div class="qna">
+      <h3 class="question">Q5：即食鮮食包該如何保存?</h3>
+      <div class="answer">
+        <p>
+          未開封時置於陰涼處避免陽光直射，無須冷藏；如開封後未食用完，則須以冷藏保存，並於隔餐優先盡快食用完畢。
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <div class="container footer-chosen">
+      <ul>
+        <li><a href="">購物流程</a></li>
+        <li><a href="">售後服務</a></li>
+        <li><a href="">實體通路</a></li>
+        <li><a href="">異業合作</a></li>
+        <li><a href="">隱私條款</a></li>
+        <li><a href="https://www.facebook.com"><img class="footer-icon" src="public/images/icon-fb.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com"><img class="footer-icon" src="public/images/icon-ins.png" alt=""></a>
+        </li>
+        <li><a href="https://line.me/zh-hant/"><img class="footer-icon" src="public/images/icon-line.png" alt=""></a>
+        </li>
+      </ul>
+      <p>service@onemao.com.tw MON-FRI 09:00-12:00 / 13:00-18:00</p>
+      <p class="copyright">2022 ONE MAO PET CANTEEN © ALL Rights Reserved</p>
+    </div>
+  </footer>
+
+
+</body>
+
+<script>let question = document.querySelectorAll(".question");
+
+  question.forEach((qsitem) => {
+    qsitem.addEventListener("click", function (e) {
+      //   store the .answer div containing the answer
+      let sibling = qsitem.nextElementSibling;
+
+      // Nested loop for removing active class from all and set answer height to 0
+      question.forEach((item) => {
+        item.nextElementSibling.style.height = "0px";
+        //   remove class "active" except for the currently clicked item
+        item != qsitem && item.parentNode.classList.remove("active");
+      });
+      //then toggle the "active" class of clicked item's parent ".qna"
+      this.parentNode.classList.toggle("active");
+
+      // set actual height for .answer div if .qna has the class "active"
+      if (qsitem.parentNode.classList.contains("active")) {
+        sibling.style.height = sibling.scrollHeight + "px";
+      } else {
+        sibling.style.height = "0px";
+      }
+    });
+  });
+
+</script>
+
+
+</html>
